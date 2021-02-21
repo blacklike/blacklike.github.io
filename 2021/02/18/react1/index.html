@@ -160,7 +160,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.9k 字
+      3.2k 字
     </span>
   
 
@@ -170,7 +170,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      22
+      35
        分钟
     </span>
   
@@ -203,7 +203,18 @@
             <h1 style="display: none">前端知识点的杂记</h1>
             
             <div class="markdown-body">
-              <h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><h4 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h4><blockquote>
+              <h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><h4 id="doctype-文档类型-的作用是什么？？？"><a href="#doctype-文档类型-的作用是什么？？？" class="headerlink" title="doctype(文档类型)的作用是什么？？？"></a>doctype(文档类型)的作用是什么？？？</h4><p>用于声明文档类型和DTD规范，确保不同的浏览器能够用相同的是方法解析文档，并且执行相同的渲染模式。<br>DTD：文档类型定义，是XML的文档类型定于，是XML的约束。</p>
+<h4 id="浏览器标准模式-standards-mode-、接近标准模式（almost-standards-mode）和怪异模式-quirks-mode-之间的区别是什么？"><a href="#浏览器标准模式-standards-mode-、接近标准模式（almost-standards-mode）和怪异模式-quirks-mode-之间的区别是什么？" class="headerlink" title="浏览器标准模式 (standards mode) 、接近标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？"></a>浏览器标准模式 (standards mode) 、接近标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？</h4><p>怪异模式：向后兼容，因为老的浏览器是没有很多的规范，但随着浏览器的发展，制定了越来越多的规范。所以为了兼容这样的老是浏览器，才有了怪异模式。<br>接近标准模式：几乎跟标准模式差不多，但是还是有些差别，比方对于表格单元格中设置图像会去掉下面的空隙。标准的单元格内设置图像，由于图像会以文字的基线为准，比如想g，j这样要显示下面，就会产生空隙。<br>标准模式：以最高的标准渲染。</p>
+<h4 id="HTML和XHTML有什么区别？"><a href="#HTML和XHTML有什么区别？" class="headerlink" title="HTML和XHTML有什么区别？"></a>HTML和XHTML有什么区别？</h4><ol>
+<li>XHTML有大小写区分，比如<DIV>跟<div>是两个东西</li>
+<li>XHTML有良好的文档结构，需要合理的嵌套。比如<p><span></p></span>这种是有问题的。</li>
+<li>XHTML必须要有结束标签，即使是空标签也必须要有&lt;/&gt;，否则会报错。</li>
+<li>XHTML必须拥有一个根标签，就是必须嵌套在<html>根元素中。</li>
+<li>XHTML中的属性必须使用引号，否则会报错。</li>
+<li>HTML中用脚本读取HTML标签或者属性的时候，返回的是大写；但是XHTML返回的是小写。</li>
+</ol>
+<h4 id="如果页面使用’application-xhtml-xml’会有什么问题吗？"><a href="#如果页面使用’application-xhtml-xml’会有什么问题吗？" class="headerlink" title="如果页面使用’application/xhtml+xml’会有什么问题吗？"></a>如果页面使用’application/xhtml+xml’会有什么问题吗？</h4><p>如果使用了XHTML，页面结构中的所有的标签都必须关闭，包括空标签。而且”application/xhtml+xml”在部分老的浏览器中不支持。</p>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><h4 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h4><blockquote>
 <p>目前主流的盒模型分为两类：</p>
 <ol>
 <li>W3C标准盒模型：content + padding + border + margin</li>
@@ -256,7 +267,33 @@
 <li>link在浏览器中没有兼容性问题，而@import只能在IE5以上的浏览器中使用。</li>
 </ol>
 </blockquote>
-<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><h4 id="谈谈设计模式"><a href="#谈谈设计模式" class="headerlink" title="谈谈设计模式"></a>谈谈设计模式</h4><h4 id="防抖跟节流"><a href="#防抖跟节流" class="headerlink" title="防抖跟节流"></a>防抖跟节流</h4><ol>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><h4 id="谈谈设计模式"><a href="#谈谈设计模式" class="headerlink" title="谈谈设计模式"></a>谈谈设计模式</h4><h4 id="var、let、const的区别是什么？"><a href="#var、let、const的区别是什么？" class="headerlink" title="var、let、const的区别是什么？"></a>var、let、const的区别是什么？</h4><blockquote>
+<ul>
+<li><code>var</code>是ES5的定义，而<code>let</code>、<code>const</code>是ES6提出的.</li>
+<li><code>var</code>存在变量提升，而<code>let</code>、<code>const</code>不存在变量提升.</li>
+<li><code>var</code>声明的变量，要么在全局作用域中，要么在局部作用域中。而<code>let</code>声明的变量只在块级作用域中有效。</li>
+<li><code>let</code>、<code>const</code>声明变量之前就使用变量会报错，形成一个“暂时性死区”.</li>
+<li><code>var</code>声明变量是可以重复声明，但是<code>let</code>、<code>const</code>声明过以后不允许重复声明.</li>
+<li><code>var</code>声明的变量会被添加到window对象上，但是<code>let</code>、<code>const</code>声明的变量是不会被添加到windows对象上的。</li>
+<li><code>var</code>跟<code>let</code>声明的变量的值都是可以更改的，但是<code>const</code>声明变量以后必须立刻初始化，赋初始值。因为一旦声明不对其初始化赋值，会报错。<br><code>const</code>赋值以后，无法进行更改。如果const的值是基本类型，如number，string等，无法修改值。但是如果是obj这种指向地址，而非地址里面的值，是可以更改地址里面的值，但是如果更改指向地址，会报错。</li>
+</ul>
+</blockquote>
+<h4 id="promise-原理"><a href="#promise-原理" class="headerlink" title="promise 原理"></a>promise 原理</h4><h4 id="GET-跟-POST的区别"><a href="#GET-跟-POST的区别" class="headerlink" title="GET 跟 POST的区别"></a>GET 跟 POST的区别</h4><p>GET：</p>
+<ul>
+<li>一般用于信息的获取，使用URL传递参数，对所发送的信息数量也有限制，一般在2000个字符。</li>
+</ul>
+<p>POST：</p>
+<ul>
+<li>一般用于修改服务器上的资源，通过提交的表单传递值，对所发送的信息没有限制。</li>
+</ul>
+<h4 id="前端存储-cookie-sessionStorage-localStorage-的区别"><a href="#前端存储-cookie-sessionStorage-localStorage-的区别" class="headerlink" title="前端存储 cookie || sessionStorage || localStorage 的区别"></a>前端存储 cookie || sessionStorage || localStorage 的区别</h4><p>cookie：<br>严格来讲cokkie是跟后端有关系的，作用于服务端交互。但是cookie有大小的限制，以及个数的限制，大小不得超过4k，个数有的是20个有的是50个。有缓存时间限制，超过了缓存时间，就会被清楚掉。在HTTP请求的时候，会将cookie信息自动发送给后端。</p>
+<p>sessionStorage:<br>本地存储的方式之一，是一种会话存储，生命周期是会话框的时间，一旦会话框被关闭，存储的信息也就被清除了。</p>
+<p>localStorage:<br>本地存储，大小有5M，存储的数据只要不手动清除是不会消失一直存在于本地。</p>
+<h4 id="请解释-、-和-的区别。"><a href="#请解释-、-和-的区别。" class="headerlink" title="请解释 、 和  的区别。"></a>请解释 <script>、<script async> 和 <script defer> 的区别。</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// 在不添加任何属性的时候,浏览器只要读到就会立即加载以及执行，不会等待后续文档加载，因此可能会阻塞文档读取。<br></code></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">async</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// async是会异步加载以及执行，只要加载完毕，就会立刻执行。<br></code></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// defer跟async在加载上一样，都是异步执行的，但是不会跟async一样加载完毕就执行，它会等到后续文档都加载完毕了，再执行。因此defer会比较符合我们日常开发的需求。<br></code></pre></td></tr></table></figure>
+<h4 id="什么是渐进式渲染-progressive-rendering-？"><a href="#什么是渐进式渲染-progressive-rendering-？" class="headerlink" title="什么是渐进式渲染 (progressive rendering)？"></a>什么是渐进式渲染 (progressive rendering)？</h4><p>渐进式渲染是为了提高网页的优化，是一种尽快呈现页面的技术。比如图片懒加载，比如分层次渲染。</p>
+<h4 id="防抖跟节流"><a href="#防抖跟节流" class="headerlink" title="防抖跟节流"></a>防抖跟节流</h4><ol>
 <li>防抖：<blockquote>
 <p>思路：如果在短时间内大量的触发同一个事件操作，就重新计时。比如说，设置时间空隙为2s，用户点击了操作以后，在2s以后会触发时间，如果在2s以内不停的触发，就会重新计算时间，等用户停止操作以后的2s内才会执行操作。</p>
 </blockquote>
