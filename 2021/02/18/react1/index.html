@@ -160,7 +160,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      3.2k 字
+      4.2k 字
     </span>
   
 
@@ -170,7 +170,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      35
+      46
        分钟
     </span>
   
@@ -203,18 +203,20 @@
             <h1 style="display: none">前端知识点的杂记</h1>
             
             <div class="markdown-body">
-              <h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><h4 id="doctype-文档类型-的作用是什么？？？"><a href="#doctype-文档类型-的作用是什么？？？" class="headerlink" title="doctype(文档类型)的作用是什么？？？"></a>doctype(文档类型)的作用是什么？？？</h4><p>用于声明文档类型和DTD规范，确保不同的浏览器能够用相同的是方法解析文档，并且执行相同的渲染模式。<br>DTD：文档类型定义，是XML的文档类型定于，是XML的约束。</p>
+              <h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><h4 id="doctype-文档类型-的作用是什么？？？"><a href="#doctype-文档类型-的作用是什么？？？" class="headerlink" title="doctype(文档类型)的作用是什么？？？"></a>doctype(文档类型)的作用是什么？？？</h4><p>用于声明文档类型和DTD规范，确保不同的浏览器能够用相同的是方法解析文档，并且执行相同的渲染模式。<br>DTD：文档类型定义，是XML的文档类型定于，是XML的约束。</p>
 <h4 id="浏览器标准模式-standards-mode-、接近标准模式（almost-standards-mode）和怪异模式-quirks-mode-之间的区别是什么？"><a href="#浏览器标准模式-standards-mode-、接近标准模式（almost-standards-mode）和怪异模式-quirks-mode-之间的区别是什么？" class="headerlink" title="浏览器标准模式 (standards mode) 、接近标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？"></a>浏览器标准模式 (standards mode) 、接近标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？</h4><p>怪异模式：向后兼容，因为老的浏览器是没有很多的规范，但随着浏览器的发展，制定了越来越多的规范。所以为了兼容这样的老是浏览器，才有了怪异模式。<br>接近标准模式：几乎跟标准模式差不多，但是还是有些差别，比方对于表格单元格中设置图像会去掉下面的空隙。标准的单元格内设置图像，由于图像会以文字的基线为准，比如想g，j这样要显示下面，就会产生空隙。<br>标准模式：以最高的标准渲染。</p>
 <h4 id="HTML和XHTML有什么区别？"><a href="#HTML和XHTML有什么区别？" class="headerlink" title="HTML和XHTML有什么区别？"></a>HTML和XHTML有什么区别？</h4><ol>
-<li>XHTML有大小写区分，比如<DIV>跟<div>是两个东西</li>
-<li>XHTML有良好的文档结构，需要合理的嵌套。比如<p><span></p></span>这种是有问题的。</li>
+<li>XHTML有大小写区分，比如&lt;DIV&gt;跟&lt;div&gt;是两个东西</li>
+<li>XHTML有良好的文档结构，需要合理的嵌套。比如&lt;p&gt;&lt;span&gt;&lt;/p&gt;&lt;/span&gt;这种是有问题的。</li>
 <li>XHTML必须要有结束标签，即使是空标签也必须要有&lt;/&gt;，否则会报错。</li>
-<li>XHTML必须拥有一个根标签，就是必须嵌套在<html>根元素中。</li>
+<li>XHTML必须拥有一个根标签，就是必须嵌套在&lt;html&gt;根元素中。</li>
 <li>XHTML中的属性必须使用引号，否则会报错。</li>
 <li>HTML中用脚本读取HTML标签或者属性的时候，返回的是大写；但是XHTML返回的是小写。</li>
 </ol>
 <h4 id="如果页面使用’application-xhtml-xml’会有什么问题吗？"><a href="#如果页面使用’application-xhtml-xml’会有什么问题吗？" class="headerlink" title="如果页面使用’application/xhtml+xml’会有什么问题吗？"></a>如果页面使用’application/xhtml+xml’会有什么问题吗？</h4><p>如果使用了XHTML，页面结构中的所有的标签都必须关闭，包括空标签。而且”application/xhtml+xml”在部分老的浏览器中不支持。</p>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><h4 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h4><blockquote>
+<h4 id="响应式设计是什么？响应式原理是什么？"><a href="#响应式设计是什么？响应式原理是什么？" class="headerlink" title="响应式设计是什么？响应式原理是什么？"></a>响应式设计是什么？响应式原理是什么？</h4><p>响应式：同一个页面展示在不同的浏览器分辨率或者尺寸下有不同的页面结构跟表现，但是是用同一套代码。</p>
+<p>方式：媒体查询、rem</p>
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><h4 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h4><blockquote>
 <p>目前主流的盒模型分为两类：</p>
 <ol>
 <li>W3C标准盒模型：content + padding + border + margin</li>
@@ -267,7 +269,7 @@
 <li>link在浏览器中没有兼容性问题，而@import只能在IE5以上的浏览器中使用。</li>
 </ol>
 </blockquote>
-<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><h4 id="谈谈设计模式"><a href="#谈谈设计模式" class="headerlink" title="谈谈设计模式"></a>谈谈设计模式</h4><h4 id="var、let、const的区别是什么？"><a href="#var、let、const的区别是什么？" class="headerlink" title="var、let、const的区别是什么？"></a>var、let、const的区别是什么？</h4><blockquote>
+<h2 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h2><h4 id="谈谈设计模式"><a href="#谈谈设计模式" class="headerlink" title="谈谈设计模式"></a>谈谈设计模式</h4><h4 id="var、let、const的区别是什么？"><a href="#var、let、const的区别是什么？" class="headerlink" title="var、let、const的区别是什么？"></a>var、let、const的区别是什么？</h4><blockquote>
 <ul>
 <li><code>var</code>是ES5的定义，而<code>let</code>、<code>const</code>是ES6提出的.</li>
 <li><code>var</code>存在变量提升，而<code>let</code>、<code>const</code>不存在变量提升.</li>
@@ -289,7 +291,7 @@
 <h4 id="前端存储-cookie-sessionStorage-localStorage-的区别"><a href="#前端存储-cookie-sessionStorage-localStorage-的区别" class="headerlink" title="前端存储 cookie || sessionStorage || localStorage 的区别"></a>前端存储 cookie || sessionStorage || localStorage 的区别</h4><p>cookie：<br>严格来讲cokkie是跟后端有关系的，作用于服务端交互。但是cookie有大小的限制，以及个数的限制，大小不得超过4k，个数有的是20个有的是50个。有缓存时间限制，超过了缓存时间，就会被清楚掉。在HTTP请求的时候，会将cookie信息自动发送给后端。</p>
 <p>sessionStorage:<br>本地存储的方式之一，是一种会话存储，生命周期是会话框的时间，一旦会话框被关闭，存储的信息也就被清除了。</p>
 <p>localStorage:<br>本地存储，大小有5M，存储的数据只要不手动清除是不会消失一直存在于本地。</p>
-<h4 id="请解释-、-和-的区别。"><a href="#请解释-、-和-的区别。" class="headerlink" title="请解释 、 和  的区别。"></a>请解释 <script>、<script async> 和 <script defer> 的区别。</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// 在不添加任何属性的时候,浏览器只要读到就会立即加载以及执行，不会等待后续文档加载，因此可能会阻塞文档读取。<br></code></pre></td></tr></table></figure>
+<h4 id="请解释-lt-script-gt-、-lt-script-async-gt-和-lt-script-defer-gt-的区别。"><a href="#请解释-lt-script-gt-、-lt-script-async-gt-和-lt-script-defer-gt-的区别。" class="headerlink" title="请解释 &lt;script&gt;、&lt;script async&gt; 和 &lt;script defer&gt; 的区别。"></a>请解释 &lt;script&gt;、&lt;script async&gt; 和 &lt;script defer&gt; 的区别。</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// 在不添加任何属性的时候,浏览器只要读到就会立即加载以及执行，不会等待后续文档加载，因此可能会阻塞文档读取。<br></code></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">async</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// async是会异步加载以及执行，只要加载完毕，就会立刻执行。<br></code></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">defer</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>// defer跟async在加载上一样，都是异步执行的，但是不会跟async一样加载完毕就执行，它会等到后续文档都加载完毕了，再执行。因此defer会比较符合我们日常开发的需求。<br></code></pre></td></tr></table></figure>
 <h4 id="什么是渐进式渲染-progressive-rendering-？"><a href="#什么是渐进式渲染-progressive-rendering-？" class="headerlink" title="什么是渐进式渲染 (progressive rendering)？"></a>什么是渐进式渲染 (progressive rendering)？</h4><p>渐进式渲染是为了提高网页的优化，是一种尽快呈现页面的技术。比如图片懒加载，比如分层次渲染。</p>
@@ -309,9 +311,70 @@
 </ol>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">throttle</span>(<span class="hljs-params">fn, delay</span>) </span>&#123;<br>    <span class="hljs-keyword">let</span> valid = <span class="hljs-literal">true</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>        <span class="hljs-keyword">if</span> (!valid) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        valid = <span class="hljs-literal">false</span>;<br>        <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> &#123;<br>            fn();<br>            valid = <span class="hljs-literal">true</span>;<br>        &#125;, delay)<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-
-
-<h3 id="REACT"><a href="#REACT" class="headerlink" title="REACT"></a>REACT</h3><h4 id="什么是react？"><a href="#什么是react？" class="headerlink" title="什么是react？"></a>什么是react？</h4><p>react是一个用于构建用户界面的javascript库，主要关注MVC中的VIEW层面。</p>
+<h4 id="HTTP跟HTTPS的区别"><a href="#HTTP跟HTTPS的区别" class="headerlink" title="HTTP跟HTTPS的区别"></a>HTTP跟HTTPS的区别</h4><ol>
+<li>HTTPS需要CA证书，费用会比较昂贵</li>
+<li>HTTP是超文本协议传输，信息是明文的。HTTPS是安全的SSL加密协议传输。</li>
+<li>HTTP的端口是80，HTTPS的端口是443。</li>
+<li>HTTP连接简单，是无状态的。HTTPS是由SSL+HTTP协议构建的可加密传输、身份认证的网络协议，比HTTP安全。</li>
+</ol>
+<h4 id="HTTPS的工作原理"><a href="#HTTPS的工作原理" class="headerlink" title="HTTPS的工作原理"></a>HTTPS的工作原理</h4><ol>
+<li>客户端使用HTTPS url访问服务端，请求跟服务端建立SSL传输连接。</li>
+<li>服务端接收到客户端的请求，会将网站的证书（证书中包含公钥），返回给客户端。</li>
+<li>客户端会跟服务端开始协商SSL的安全等级</li>
+<li>客户端跟服务端统一了安全等级以后，会建立一个会话秘钥，然后通过网站的公钥来加密会话的秘钥，并且传递网站。</li>
+<li>服务端会通过自己的私钥来解密会话的秘钥。</li>
+<li>服务端会通过会话秘钥来加密跟客户端之间的通信。</li>
+</ol>
+<h4 id="浏览器从输入URL到打开页面发生了什么？"><a href="#浏览器从输入URL到打开页面发生了什么？" class="headerlink" title="浏览器从输入URL到打开页面发生了什么？"></a>浏览器从输入URL到打开页面发生了什么？</h4><blockquote>
+<ol>
+<li>浏览器输入URL</li>
+<li>浏览器查询缓存是否为最新的，是，就展示缓存信息，否就看下一步。</li>
+<li>解析URL获取协议，端口，域名以及PATH</li>
+<li>组装一个HTTP（GET）请求报文</li>
+<li>获取主机IP</li>
+</ol>
+<ul>
+<li>浏览器缓存</li>
+<li>本地缓存</li>
+<li>Hosts文件</li>
+<li>DNS</li>
+<li>路由器缓存</li>
+</ul>
+<ol start="6">
+<li>打开soket与目标IP、端口进行TCP连接</li>
+<li>连接成功以后，发送HTTP请求</li>
+<li>服务端接受并且解析该请求，并且发送给服务程序</li>
+<li>服务程序查看缓存，如果有，直接返回304</li>
+<li>处理程序要读取完整的请求并准备HTTP响应</li>
+<li>服务器将响应报文通过TCP连接返回</li>
+<li>接受到HTTP响应，就可以选择关闭TCP连接</li>
+<li>检查响应码</li>
+<li>将响应资源缓存</li>
+<li>将响应进行解码</li>
+<li>然后解析HTML文件，构建DOM树，CSS树，执行JS脚本</li>
+<li>渲染页面</li>
+</ol>
+</blockquote>
+<h4 id="TCP的三次握手跟四次挥手"><a href="#TCP的三次握手跟四次挥手" class="headerlink" title="TCP的三次握手跟四次挥手"></a>TCP的三次握手跟四次挥手</h4><p>客户端跟服务端之间的连接，是通过TPC协议<br><code>握手</code>：</p>
+<blockquote>
+<ul>
+<li>客户端发送SYN（同步序列编号）包到服务器，进入到SYN_SENT状态中，等待服务端确认</li>
+<li>服务端接收到SYN包，必须先确认客户端发来的SYN包，同时自己也发送一个SYN+ACK包，进入到SYN_RECV状态</li>
+<li>客户端接收到服务端的SYN+ACK包，向服务端发送确认包ACK，客户端跟服务端进入TCP连接成功状态，完成三次握手</li>
+</ul>
+</blockquote>
+<p><code>挥手</code>:</p>
+<blockquote>
+<ul>
+<li>客户端发送释放报文，并且停止发送数据，发送FIN</li>
+<li>服务端端接收到释放报文，发出确认报文</li>
+<li>客户端接收到服务端的确认请求以后，进入到了关闭等待中</li>
+<li>服务端最后数据发完以后，向客户端发送释放报文，等待客户端确认</li>
+<li>客户端收到服务端发送的释放报文，必须发出确认，然后服务端收到确认信息以后，TCP关闭连接。</li>
+</ul>
+</blockquote>
+<h4 id="强制缓存跟协商缓存"><a href="#强制缓存跟协商缓存" class="headerlink" title="强制缓存跟协商缓存"></a>强制缓存跟协商缓存</h4><p>浏览器向服务端发起请求的时候，首先会确认缓存信息，cache-control跟expores信息，如果命中缓存，就会直接走强制缓存，不会跟服务端进行通信，直接返回缓存信息。<br>如果没有命中强制缓存，浏览器会发送请求到服务端，请求中会携带last-modifued/etag等参数，如果命中了协商缓存，会返回304，告诉浏览器直接从缓存中取，如果没有，会直接返回新的响应内容。</p>
+<h2 id="REACT"><a href="#REACT" class="headerlink" title="REACT"></a>REACT</h2><h4 id="什么是react？"><a href="#什么是react？" class="headerlink" title="什么是react？"></a>什么是react？</h4><p>react是一个用于构建用户界面的javascript库，主要关注MVC中的VIEW层面。</p>
 <h4 id="为什么使用react？"><a href="#为什么使用react？" class="headerlink" title="为什么使用react？"></a>为什么使用react？</h4><ul>
 <li>使用VDOM而不是真实的DOM</li>
 <li>可以用服务端渲染</li>
@@ -423,6 +486,32 @@
               
             </div>
 
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'http://example.com/2021/02/18/react1/';
+        this.page.identifier = '/2021/02/18/react1/';
+      };
+      Fluid.utils.waitElementVisible('disqus_thread', function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'fluid' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', new Date());
+        (d.head || d.body).appendChild(s);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
             
           </article>
         </div>
